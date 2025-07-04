@@ -1,0 +1,6 @@
+<manifest package="app.revanced.extension">
+    <application>
+        <activity android:name="app.revanced.extension.login.LoginActivity"
+            android:exported="false" />
+    </application>
+</manifest>
