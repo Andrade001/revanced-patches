@@ -1,0 +1,22 @@
+plugins {
+    alias(libs.plugins.android.library)
+}
+
+android {
+    namespace = "app.revanced.extension"
+    compileSdk = 34
+
+    defaultConfig {
+        minSdk = 23
+    }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation(project(":extensions:shared:library"))
+    compileOnly(project(":extensions:login:stub"))
+}
